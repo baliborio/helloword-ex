@@ -1,0 +1,50 @@
+<script>
+
+var idade= 24;
+var ano = 2018 - idade;
+document.write("Seu ano de nascimento:" + ano);
+
+document.write("<br>");
+
+document.write("A media de suas idades:" + ((25 + 32 + 26)/ 3));
+
+document.write("<br>");
+
+var nome= "Barbara";
+var nota1= 8;
+var nota2= 7;
+var nota3= 9;
+var media = ((nota1 + nota2 + nota3)/3);
+document.write(nome + ", a media das suas notas:" +media);
+
+document.write("<br>");
+
+var A = 8;
+var B = 9;
+var C = 8;
+var D = 9;
+document.write(A = D);
+document.write(B = C);
+
+document.write("<br>");
+
+var peso = 56;
+var altura = 1.90;
+var calculaIMC = function(altura,peso){
+var IMC = peso/(altura * altura)
+return Math.round(IMC);
+};
+document.write(calculaIMC(altura,peso));
+
+document.write("<br>");
+
+var nome = window.prompt("Qual seu nome?")
+var peso = window.prompt("Qual seu peso?")
+var altura = window.prompt("Qual sua altura?")
+var calculaIMC = function(altura,peso){
+var IMC = peso/(altura * altura)
+return Math.round(IMC);
+};
+document.write(nome + ", seu IMC:" + calculaIMC(altura,peso));
+
+</script>
