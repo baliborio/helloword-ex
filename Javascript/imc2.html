@@ -1,0 +1,26 @@
+<script>
+
+var pulalinha = function() {document.write("<br>");
+	document.write("<br>")
+	};
+
+var mostra = function(frase) {
+	document.write("<big>" + frase + "</big>");
+	pulalinha();
+	};
+
+var peso = 98
+var altura = 1.79
+function calculaIMC (peso,altura) {
+	var imc = peso / (altura * altura);
+	return imc; 
+}
+mostra(calculaIMC(peso,altura))
+var imc2 = calculaIMC(peso, altura);
+
+if (imc2 > 18 && imc2 < 32)
+	{
+	mostra("Seu IMC está no limite");
+	}
+
+</script>

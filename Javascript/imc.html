@@ -1,0 +1,23 @@
+<script>
+	
+	var pulalinha = function() {document.write("<br>");
+		document.write("<br>")
+		};
+
+	var mostra = function(frase) {
+		document.write("<big>" + frase + "</big>");
+		pulalinha();
+	};
+
+	var peso = 52
+	var altura = 1.78
+	var calculaIMC = function(peso, altura) {
+		var imc = peso / (altura * altura);
+		return imc;
+	};
+	var imc2 = calculaIMC(peso, altura);
+	mostra("O imc do primo é: " + imc2)
+	mostra("Ele está " + (imc2-18) + " pontos acima do limite")
+	mostra("Ele está " + (35 - imc2) + " pontos abaixo do limite")
+
+</script>

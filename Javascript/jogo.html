@@ -1,0 +1,31 @@
+<script>
+var pulalinha = function() {document.write("<br>");
+	document.write("<br>")
+	};
+
+var mostra = function(frase) {
+	document.write("<big>" + frase + "</big>");
+	pulalinha();
+	};
+
+
+var numeropensado = Math.round(Math.random() *100);
+
+var chute = prompt("Qual número eu pensei?")
+
+if (chute == numeropensado) {
+	mostra("Parabéns, você acertou, eu pensei em: " +  numeropensado);
+}
+if (chute <= numeropensado) {
+	mostra("Você errou, eu pensei num número maior! Eu pensei em: " + numeropensado);
+	}
+
+if (chute >= numeropensado) {
+	mostra("Você errou, eu pensei num número menor! Eu pensei em: " + numeropensado);
+	}
+
+if (isNaN(chute)){
+	mostra("Só números são válidos")
+}
+
+</script>
